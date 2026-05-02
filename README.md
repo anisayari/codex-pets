@@ -6,7 +6,7 @@ One-command custom pet installer for the Codex desktop app.
 
 ### Zoro
 
-A fan-made chibi swordsman pet for Codex, with sword idle, dash, jump-combo, lost-direction, review, and failed animations.
+A fan-made chibi swordsman pet for Codex, with sword idle, dash, omni-direction movement, jump-combo, lost-direction, review, and failed animations.
 
 ![Zoro contact sheet](previews/zoro-contact-sheet.png)
 

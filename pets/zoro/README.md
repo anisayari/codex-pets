@@ -1,6 +1,6 @@
 # Zoro Codex Pet
 
-Fan-made Zoro-inspired Codex pet with sword idle animations, dash attacks, jumping sword combos, lost-direction states, review focus, and failed-task reactions.
+Fan-made Zoro-inspired Codex pet with sword idle animations, dash attacks, omni-direction movement poses, jumping sword combos, lost-direction states, review focus, and failed-task reactions.
 
 ## Files
 

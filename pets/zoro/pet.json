@@ -1,6 +1,6 @@
 {
   "id": "zoro",
   "displayName": "Zoro",
-  "description": "A compact chibi swordsman digital pet inspired by Roronoa Zoro from One Piece.",
+  "description": "A compact chibi swordsman pet with sword and omni-direction movement animations.",
   "spritesheetPath": "spritesheet.webp"
 }
