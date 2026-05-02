@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "pets": [
+    {
+      "id": "zoro",
+      "displayName": "Zoro",
+      "description": "Fan-made chibi swordsman pet with sword idle, dash, jump-combo, lost-direction, review, and failed animations.",
+      "path": "pets/zoro",
+      "preview": "previews/zoro-contact-sheet.png",
+      "files": [
+        "pet.json",
+        "spritesheet.webp"
+      ]
+    }
+  ]
+}

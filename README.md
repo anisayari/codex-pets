@@ -1,6 +1,6 @@
 # Codex Pets
 
-Custom pets for the Codex desktop app.
+One-command custom pet installer for the Codex desktop app.
 
 ## Pets
 
@@ -15,7 +15,7 @@ Included files:
 - `pets/zoro/pet.json`
 - `pets/zoro/spritesheet.webp`
 
-## Easy Install
+## Fast Install
 
 ### Windows PowerShell
 
@@ -25,6 +25,18 @@ Run this in PowerShell:
 irm https://raw.githubusercontent.com/anisayari/codex-pets/main/install.ps1 | iex
 ```
 
+List available pets:
+
+```powershell
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/anisayari/codex-pets/main/install.ps1))) -List
+```
+
+Install a specific pet:
+
+```powershell
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/anisayari/codex-pets/main/install.ps1))) -Pet zoro
+```
+
 ### macOS / Linux
 
 Run this in a terminal:
@@ -32,6 +44,43 @@ Run this in a terminal:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/anisayari/codex-pets/main/install.sh | bash
 ```
+
+List available pets:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/anisayari/codex-pets/main/install.sh | bash -s -- --list
+```
+
+Install a specific pet:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/anisayari/codex-pets/main/install.sh | bash -s -- zoro
+```
+
+## How It Works
+
+No localhost server or package manager is required. The installer:
+
+1. Reads `pets.json` from this repo.
+2. Downloads only the selected pet files.
+3. Copies them into your local Codex pets folder:
+
+   - Windows: `%USERPROFILE%\.codex\pets\<pet-id>`
+   - macOS/Linux: `~/.codex/pets/<pet-id>`
+
+4. You reload Codex and select the pet.
+
+## Add Another Pet
+
+1. Add the pet package:
+
+   - `pets/<pet-id>/pet.json`
+   - `pets/<pet-id>/spritesheet.webp`
+
+2. Add an entry to `pets.json`.
+3. Push to `main`.
+
+The same install commands will then be able to list and install the new pet.
 
 ## Manual Install
 
